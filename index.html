@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Hidden Cost of AI -Purdue UX × JHU-APL</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="reading-progress" id="progress"></div>
+
+<nav>
+  <div class="nav-brand">Purdue UX ✦ JHU-APL ✦ SP 2026</div>
+  <ul class="nav-links">
+    <li><a href="#data-centers">Data Centers</a></li>
+    <li><a href="#water">Water</a></li>
+    <li><a href="#energy">Energy</a></li>
+    <li><a href="#carbon">Carbon</a></li>
+    <li><a href="#impact">Impact</a></li>
+    <li><a href="#calculator">Your Usage</a></li>
+  </ul>
+</nav>
+
+<section id="" class="hero themed theme-deepsea" data-bg="images/hero.jpg">
+  <div class="hero-bg"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-eyebrow">The Hidden Cost of AI</div>
+  <h1>Every prompt<br>has a <em>price.</em></h1>
+  <p class="hero-deck">Billions of people use AI every day without knowing what it quietly consumes - water, electricity, and carbon - in data centers they'll never see. This is the story behind the search bar.</p>
+  <div class="hero-stats">
+    <div class="hero-stat">
+      <div class="hero-stat-num">5M</div>
+      <div class="hero-stat-label">Gallons of water / day<br>per hyperscale center</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">200 TWh</div>
+      <div class="hero-stat-label">Data center energy use<br>in 2024 (= Thailand)</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num">2.18%</div>
+      <div class="hero-stat-label">Of US energy emissions<br>from data centers, 2023</div>
+    </div>
+  </div>
+</section>
+
+<div class="ticker">
+  <div class="ticker-label">Key Facts</div>
+  <div class="ticker-track">
+  <div class="ticker-scroll">
+    <div class="ticker-item">95% of data centers use "dirtier-than-average" electricity <span>•</span></div>
+    <div class="ticker-item">Training GPT-4 required 50 gigawatt-hours <span>•</span></div>
+    <div class="ticker-item">AI compute doubles every 3.4 months since 2012 <span>•</span></div>
+    <div class="ticker-item">86% of US students use AI tools for class <span>•</span></div>
+    <div class="ticker-item">Over 50% of data center electricity comes from fossil fuels <span>•</span></div>
+    <div class="ticker-item">AI = 15% of all data center energy use -IEA 2024 <span>•</span></div>
+    <div class="ticker-item">70% of nodes with rising electricity prices are within 50 miles of a data center <span>•</span></div>
+    <div class="ticker-item">95% of data centers use "dirtier-than-average" electricity <span>•</span></div>
+    <div class="ticker-item">Training GPT-4 required 50 gigawatt-hours <span>•</span></div>
+    <div class="ticker-item">AI compute doubles every 3.4 months since 2012 <span>•</span></div>
+    <div class="ticker-item">86% of US students use AI tools for class <span>•</span></div>
+    <div class="ticker-item">Over 50% of data center electricity comes from fossil fuels <span>•</span></div>
+    <div class="ticker-item">AI = 15% of all data center energy use -IEA 2024 <span>•</span></div>
+    <div class="ticker-item">70% of nodes with rising electricity prices are within 50 miles of a data center <span>•</span></div>
+  </div>
+  </div>
+</div>
+
+<hr class="divider">
+
+<section class="themed theme-sand">
+  <div class="section-label">Introduction</div>
+  <div class="two-col">
+    <div>
+      <h2 class="section-title fade-up">AI is everywhere. Its footprint is <em>invisible.</em></h2>
+    </div>
+    <div class="body-text fade-up">
+      <p>When you ask an AI chatbot a question, the answer arrives in seconds. What doesn't arrive with it -what never appears on your screen -is the physical cost of that response. Behind every generated sentence is a data center somewhere drawing power from the grid, circulating water through cooling systems, and releasing heat into the atmosphere.</p>
+      <p>These aren't abstract harms. They're measurable, documented, and growing. And because they're hidden from users, they're largely unchecked. The data centers powering AI's rise are the same facilities worsening water scarcity in Phoenix, driving up electricity bills in Virginia, and keeping coal plants online longer than planned.</p>
+      <p>This article exists because transparency shouldn't require a research degree. If you use AI -and you almost certainly do -these numbers belong in your field of view.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="data-centers" class="themed theme-sky-blue">
+  <div class="section-label">01 -Data Centers</div>
+  <h2 class="section-title fade-up">The factories of the digital age -built at a scale most people never imagined.</h2>
+  <div class="body-text fade-up" style="margin-bottom: 3rem;">
+    <p>A data center is a facility packed with server racks, cooling systems, and power infrastructure whose sole purpose is to keep software running. The data centers powering modern AI aren't modest warehouses -they are <span class="hl-blue">hyperscale facilities</span> that can span millions of square feet and contain upward of 5,000 servers connected by miles of cabling.</p>
+    <p>More than 1,200 hyperscale facilities operate globally today, expanding rapidly to meet surging demand for AI training and inference workloads. They cluster in specific regions -Virginia, Texas, and Oregon dominate in the US -creating concentrated pressure on local power grids, water supplies, and infrastructure.</p>
+  </div>
+  <div class="data-grid fade-up">
+    <div class="data-card">
+      <div class="data-card-accent" style="background:#1a4fa0;"></div>
+      <div class="data-card-label">Scale</div>
+      <div class="data-card-num">1,200<span class="data-card-unit">+</span></div>
+      <div class="data-card-desc">Hyperscale data centers globally -all pivoting aggressively toward AI workloads.</div>
+    </div>
+    <div class="data-card">
+      <div class="data-card-accent" style="background:#d4811b;"></div>
+      <div class="data-card-label">Size</div>
+      <div class="data-card-num">1M<span class="data-card-unit"> sqft</span></div>
+      <div class="data-card-desc">The footprint of a large hyperscale facility -larger than 17 football fields.</div>
+    </div>
+    <div class="data-card">
+      <div class="data-card-accent" style="background:#c0392b;"></div>
+      <div class="data-card-label">Electricity</div>
+      <div class="data-card-num">80K<span class="data-card-unit"> homes</span></div>
+      <div class="data-card-desc">The largest data centers consume electricity equivalent to 80,000 US households.</div>
+    </div>
+    <div class="data-card">
+      <div class="data-card-accent" style="background:#2d7a4f;"></div>
+      <div class="data-card-label">Grid share</div>
+      <div class="data-card-num">30–37<span class="data-card-unit">%</span></div>
+      <div class="data-card-desc">Of total energy consumption in Virginia and Oregon comes from data centers alone.</div>
+    </div>
+  </div>
+  <div class="pull-quote fade-up">
+    <blockquote>"All the data centers in the United States combined would rank as the 4th largest energy consumer in the world -comparable to the electricity use of Spain, the United Kingdom, or Italy."</blockquote>
+    <cite>-Literature Review, Purdue UX × JHU-APL</cite>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="water" class="themed theme-deepsea">
+  <div class="section-label">02 -Water Usage</div>
+  <h2 class="section-title fade-up">AI is thirsty. And it's drinking from communities that can't afford to share.</h2>
+  <div class="two-col" style="margin-bottom: 3rem;">
+    <div class="body-text fade-up">
+      <p>To prevent servers from overheating, data centers pump enormous volumes of water through cooling systems -a process called evaporative cooling that trades electricity for water consumption. A single large hyperscale facility can consume up to <span class="hl-blue">5 million gallons of water per day</span>. That's equivalent to the daily water use of a town of 50,000 people, or 1.8 billion gallons each year from a single building.</p>
+      <p>Most cooling relies on Direct-to-Chip (D2C) liquid cooling, where coolant circulates directly onto hot processor components. Larger facilities sometimes use full immersion cooling -submerging entire server racks in non-conductive liquid. It's more effective but more expensive, and still deeply water-intensive.</p>
+      <p>About two-thirds of all data centers are built in water-stressed regions. Phoenix, AZ -already grappling with one of the worst water crises in American history -hosts a growing cluster of AI infrastructure while its aquifers continue to deplete.</p>
+    </div>
+    <div class="fade-up">
+      <div class="compare-section">
+        <div class="compare-title">Daily Water Consumption -Equivalents</div>
+        <div class="compare-row">
+          <div class="compare-label">1 hyperscale center</div>
+          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#1a4fa0;" data-target="100"></div></div>
+          <div class="compare-value">5M gal</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-label">Town of 50,000 people</div>
+          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#e5a94a;" data-target="100"></div></div>
+          <div class="compare-value">5M gal</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-label">Olympic swimming pool</div>
+          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#6a9e6a;" data-target="13"></div></div>
+          <div class="compare-value">660K gal</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-label">US household (daily)</div>
+          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#7fa8e0;" data-target="2"></div></div>
+          <div class="compare-value">~100 gal</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="energy" class="themed theme-moss-green" data-bg="images/hero.jpg">
+  <div class="section-label">03 -Energy Consumption</div>
+  <h2 class="section-title fade-up">The computing power required to train AI has increased 300,000× since 2012.</h2>
+  <div class="body-text fade-up" style="margin-bottom: 3rem;">
+    <p>AI models require GPUs -graphics processing units -that consume roughly <span class="hl-amber">74% of the power of an average PC</span> compared to a CPU's 9%. Half of all data center electricity is spent training AI models. Another 40% goes to HVAC and cooling. A single ChatGPT prompt uses roughly 10× more electricity than a standard Google search. An AI-generated 5-second video consumes enough energy to run a microwave for over an hour.</p>
+    <p>The scale compounds quickly. ChatGPT processes an estimated 1 billion prompts per day -consuming 109 gigawatt-hours daily. That's enough to power 10,400 homes for an entire year, every single day.</p>
+  </div>
+
+  <div class="live-counter-bar fade-up">
+    <div class="live-label">
+      <div class="live-dot"></div>
+      Since you opened this page
+    </div>
+    <div class="live-values">
+      <div class="live-val-item">
+        <div class="live-num" id="live-kwh">0.0</div>
+        <div class="live-unit">kWh consumed<br>by US data centers</div>
+      </div>
+      <div class="live-val-item">
+        <div class="live-num" id="live-gallons">0</div>
+        <div class="live-unit">gallons of water<br>consumed</div>
+      </div>
+      <div class="live-val-item">
+        <div class="live-num" id="live-co2">0.00</div>
+        <div class="live-unit">metric tons CO₂<br>emitted</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="timeline fade-up">
+    <div class="timeline-item">
+      <div class="timeline-year">2012</div>
+      <div class="timeline-text">OpenAI baseline established. Early model training costs the equivalent of <strong>2.8 gigawatt-hours</strong> -three nuclear power plants running for one hour.<sup class="cite">[1]</sup></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2018</div>
+      <div class="timeline-text">Training a large NLP model at UMass Amherst found to emit <strong>~300,000 kg of CO₂</strong> -equivalent to 125 round trips between New York and Beijing.<sup class="cite">[2]</sup> Computing power needed has grown <strong>300,000× since 2012</strong>.<sup class="cite">[1]</sup></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2023–2024</div>
+      <div class="timeline-text">Data centers consumed <strong>4% of total US electricity</strong> -double their 2018 share.<sup class="cite">[3]</sup> GPT-4 training cost <strong>$100M+ and 50 gigawatt-hours</strong>.<sup class="cite">[4]</sup> Globally, data centers used 200 TWh -equal to Thailand's annual demand.<sup class="cite">[3]</sup></div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-year">2030 (projected)</div>
+      <div class="timeline-text">Energy demand expected to reach <strong>400 TWh</strong> -enough to power Mexico.<sup class="cite">[3]</sup> Data center count may grow by <strong>165%</strong> by decade's end, requiring a 50% increase in US nuclear reactor capacity just to avoid fossil fuel reliance.<sup class="cite">[5]</sup></div>
+    </div>
+  </div>
+
+  <div class="chart-wrap fade-up">
+    <div id="chart-legend"></div>
+    <div class="chart-title">Projected global data center energy consumption (TWh)</div>
+    <div style="position: relative; height: 280px;">
+      <canvas id="energyChart"></canvas>
+    </div>
+    <div class="fig-caption">Fig. 1 -Stacked bar chart showing historical and projected global data center energy use, split between AI and non-AI workloads. Sources: IEA (2024)<sup class="cite">[3]</sup>; Lawrence Berkeley National Laboratory (2024)<sup class="cite">[5]</sup>. Values from 2025 onward are projections.</div>
+  </div>
+
+  <div class="section-citations fade-up">
+    <div class="citations-label">Sources</div>
+    <ol class="citations-list">
+      <li id="cite-1">Amodei, D. &amp; Hernandez, D. (2018). <em>AI and Compute.</em> OpenAI Blog. openai.com/blog/ai-and-compute</li>
+      <li id="cite-2">Strubell, E., Ganesh, A., &amp; McCallum, A. (2019). <em>Energy and Policy Considerations for Deep Learning in NLP.</em> University of Massachusetts Amherst. arXiv:1906.02629</li>
+      <li id="cite-3">International Energy Agency. (2024). <em>Electricity 2024: Analysis and Forecast to 2026.</em> IEA. iea.org/reports/electricity-2024</li>
+      <li id="cite-4">Semianalysis. (2023). <em>GPT-4 Architecture, Infrastructure, Training Dataset, Costs, Vision, MoE.</em> semianalysis.com</li>
+      <li id="cite-5">Shehabi, A., et al. (2024). <em>United States Data Center Energy Usage Report.</em> Lawrence Berkeley National Laboratory. eta.lbl.gov/publications/united-states-data-center-energy</li>
+    </ol>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="carbon" class="themed theme-terracotta">
+  <div class="section-label">04 -Carbon Emissions</div>
+  <h2 class="section-title fade-up">The carbon cost is real -and deliberately hard to measure.</h2>
+  <div class="two-col">
+    <div class="body-text fade-up">
+      <p>In 2023, US data centers generated approximately <span class="hl-red">105 million metric tons of CO₂ equivalent</span> -about 2.18% of all US energy-related emissions. That's a threefold increase from 2018. The average carbon intensity of data center electricity is 48% higher than the national average.</p>
+      <p>Companies aren't required to distinguish carbon emissions from AI versus general data center activity. Most emissions come from indirect Scope 2 and Scope 3 sources, making independent analysis nearly impossible and voluntary disclosure the exception rather than the rule.</p>
+      <p>When demand spikes, aging coal infrastructure that would otherwise be decommissioned gets called back online. AI's growth is actively extending the lifespan of the dirtiest power sources in the grid.</p>
+    </div>
+    <div class="fade-up">
+      <div class="data-grid" style="grid-template-columns: 1fr 1fr;">
+        <div class="data-card">
+          <div class="data-card-accent" style="background:#c0392b;"></div>
+          <div class="data-card-label">2023 US total</div>
+          <div class="data-card-num">105M<span class="data-card-unit"> MT</span></div>
+          <div class="data-card-desc">Metric tons CO₂e from US data centers -3× the 2018 estimate.</div>
+        </div>
+        <div class="data-card">
+          <div class="data-card-accent" style="background:#d4811b;"></div>
+          <div class="data-card-label">One model training</div>
+          <div class="data-card-num">300K<span class="data-card-unit"> kg</span></div>
+          <div class="data-card-desc">Carbon cost of training one large language model -equal to 125 NYC–Beijing flights.</div>
+        </div>
+        <div class="data-card">
+          <div class="data-card-accent" style="background:#1a4fa0;"></div>
+          <div class="data-card-label">Carbon intensity</div>
+          <div class="data-card-num">+48<span class="data-card-unit">%</span></div>
+          <div class="data-card-desc">Higher CO₂ intensity in data centers vs. the US national electricity average.</div>
+        </div>
+        <div class="data-card">
+          <div class="data-card-accent" style="background:#666;"></div>
+          <div class="data-card-label">Dirty grid share</div>
+          <div class="data-card-num">95<span class="data-card-unit">%</span></div>
+          <div class="data-card-desc">Of data centers operate in regions with dirtier-than-average electricity.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="impact" class="themed theme-cherry-blossom">
+  <div class="section-label">05 -Community Impact</div>
+  <h2 class="section-title fade-up">The data centers aren't in your neighborhood. Their effects might be.</h2>
+  <div class="body-text fade-up" style="margin-bottom: 3rem;">
+    <p>Data center development concentrates in specific corridors -northern Virginia, central Oregon, the Phoenix metro. For communities in these zones, the consequences extend far beyond abstract emissions data. They appear on utility bills, in groundwater reports, and in the low hum from nearby facilities that residents can feel through their walls.</p>
+  </div>
+  <div class="impact-grid fade-up">
+    <div class="impact-card">
+      <div class="impact-icon">⚡</div>
+      <div class="impact-heading">Rising electricity costs</div>
+      <div class="impact-text">70% of electrical grid nodes experiencing price increases are within 50 miles of a data center. Some areas have seen electricity costs jump as much as 267% over five years.</div>
+    </div>
+    <div class="impact-card">
+      <div class="impact-icon">💧</div>
+      <div class="impact-heading">Water competition</div>
+      <div class="impact-text">About two-thirds of data centers are built in water-stressed areas. Local aquifers face increased depletion, and sediment from industrial-scale consumption interferes with pipes and nearby bodies of water.</div>
+    </div>
+    <div class="impact-card">
+      <div class="impact-icon">🏘️</div>
+      <div class="impact-heading">Quality of life</div>
+      <div class="impact-text">Low-frequency vibrations from data center operations affect surrounding homes. Research links persistent low-frequency noise to physical anxiety and cardiovascular stress in nearby residents.</div>
+    </div>
+    <div class="impact-card">
+      <div class="impact-icon">📊</div>
+      <div class="impact-heading">Economic illusion</div>
+      <div class="impact-text">Construction creates temporary local employment, but few permanent jobs remain post-build. Large tax incentives offered to attract facilities mean actual community tax revenue falls far short of projections.</div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="calculator" class="themed theme-sunshine">
+  <div class="section-label">06 -Your Usage</div>
+  <h2 class="section-title fade-up">What does your AI habit actually cost?</h2>
+  <div class="body-text fade-up" style="margin-bottom: 2rem;">
+    <p>One ChatGPT prompt uses roughly 10× more electricity than a standard Google search. A single AI-generated video consumes enough energy to run a microwave for over an hour. Individually these costs feel negligible. Collectively -across a billion daily users -they constitute one of the fastest-growing sources of industrial energy demand on Earth. Use the estimator below to see your annual footprint.</p>
+  </div>
+  <div class="calculator fade-up">
+    <div class="calc-title">Personal AI Impact Estimator</div>
+    <div class="calc-subtitle">Adjust your typical daily and weekly usage</div>
+    <div class="calc-row">
+      <div class="calc-field">
+        <label>Text prompts per day</label>
+        <div class="calc-slider-wrap">
+          <input type="range" id="prompts" min="1" max="100" value="10" step="1">
+          <span class="calc-val" id="prompts-val">10</span>
+        </div>
+      </div>
+      <div class="calc-field">
+        <label>Image generations per week</label>
+        <div class="calc-slider-wrap">
+          <input type="range" id="images" min="0" max="50" value="5" step="1">
+          <span class="calc-val" id="images-val">5</span>
+        </div>
+      </div>
+    </div>
+    <div class="calc-row">
+      <div class="calc-field">
+        <label>AI video generations per month</label>
+        <div class="calc-slider-wrap">
+          <input type="range" id="videos" min="0" max="20" value="2" step="1">
+          <span class="calc-val" id="videos-val">2</span>
+        </div>
+      </div>
+      <div class="calc-field">
+        <label>Searches replaced by AI per day</label>
+        <div class="calc-slider-wrap">
+          <input type="range" id="searches" min="0" max="50" value="8" step="1">
+          <span class="calc-val" id="searches-val">8</span>
+        </div>
+      </div>
+    </div>
+    <div class="calc-results">
+      <div class="calc-result-item">
+        <div class="calc-result-num" id="calc-kwh">—</div>
+        <div class="calc-result-unit">kWh / year</div>
+        <div class="calc-equiv" id="calc-kwh-eq"></div>
+      </div>
+      <div class="calc-result-item">
+        <div class="calc-result-num" id="calc-water">—</div>
+        <div class="calc-result-unit">gallons water / year</div>
+        <div class="calc-equiv" id="calc-water-eq"></div>
+      </div>
+      <div class="calc-result-item">
+        <div class="calc-result-num" id="calc-co2">—</div>
+        <div class="calc-result-unit">kg CO₂ / year</div>
+        <div class="calc-equiv" id="calc-co2-eq"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section>
+  <div class="section-label">07 -What Comes Next</div>
+  <h2 class="section-title fade-up">Knowing is the first step. Demanding transparency is the second.</h2>
+  <div class="two-col">
+    <div class="body-text fade-up">
+      <p>The path forward isn't to stop using AI. It's to use it knowingly, and to demand that the industry bear its externalities transparently. Several mechanisms could meaningfully shift the trajectory.</p>
+      <p>Shifting AI computation to times and regions with higher renewable energy availability -<span class="hl-blue">temporal flexibility</span> -could reduce carbon emissions by up to 35% with no loss in model accuracy. Pausing training during high-emission grid periods adds another 25% reduction. Mandatory energy and water reporting from data center operators -currently voluntary -would allow regulators to act on real data rather than estimates.</p>
+      <p>The questions are no longer whether these impacts exist. They clearly do. The questions now are about who is responsible for measuring them, disclosing them, and changing course before the costs become irreversible.</p>
+    </div>
+    <div class="fade-up">
+      <div class="compare-section">
+        <div class="compare-title">Potential Emission Reduction Strategies</div>
+        <div class="compare-row">
+          <div class="compare-label">Shift to green energy regions</div>
+          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#2d7a4f;" data-target="35"></div></div>
+          <div class="compare-value">−35%</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-label">Pause during high-emission hours</div>
+          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#4a9e8a;" data-target="25"></div></div>
+          <div class="compare-value">−25%</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-label">Temporal flexibility scheduling</div>
+          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#7fa8e0;" data-target="20"></div></div>
+          <div class="compare-value">−20%</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-label">Improved immersion cooling</div>
+          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#a88a4a;" data-target="15"></div></div>
+          <div class="compare-value">−15%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<footer>
+  <div>
+    <div class="footer-brand">The Hidden Cost of AI</div>
+    <div class="footer-meta" style="margin-top: 0.75rem;">
+      A design research project by Purdue UX Experience Studio<br>
+      In collaboration with Johns Hopkins University Applied Physics Laboratory<br>
+      Spring 2026
+    </div>
+  </div>
+  <div class="footer-meta" style="text-align: right;">
+    Simon An · Henry Chandler · Matthew Eustace<br>
+    Keaton Hart · Eric Jon · Kellen McClain · Terri Xie<br><br>
+    Sources: IEA, UMass Amherst, OpenAI, MIT, Lawrence Berkeley National Lab
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
+<script>
+  window.addEventListener('scroll', function() {
+    var total = document.documentElement.scrollHeight - window.innerHeight;
+    document.getElementById('progress').style.width = ((window.scrollY / total) * 100) + '%';
+  });
+
+  var observer = new IntersectionObserver(function(entries) {
+    entries.forEach(function(e) {
+      if (e.isIntersecting) {
+        e.target.classList.add('visible');
+        e.target.querySelectorAll('.compare-bar[data-target]').forEach(function(bar) {
+          setTimeout(function() { bar.style.width = bar.dataset.target + '%'; }, 250);
+        });
+      }
+    });
+  }, { threshold: 0.1 });
+  document.querySelectorAll('.fade-up').forEach(function(el) { observer.observe(el); });
+
+  document.querySelectorAll('.compare-bar[data-target]').forEach(function(bar) {
+    var o = new IntersectionObserver(function(entries) {
+      if (entries[0].isIntersecting) {
+        setTimeout(function() { bar.style.width = bar.dataset.target + '%'; }, 300);
+        o.disconnect();
+      }
+    }, { threshold: 0.3 });
+    o.observe(bar);
+  });
+
+  // Optional per-section background images:
+  // Add `data-bg="images/water.jpg"` on any `.themed` section.
+  document.querySelectorAll('.themed[data-bg]').forEach(function(section) {
+    var url = section.getAttribute('data-bg');
+    if (!url) return;
+    section.style.setProperty('--section-bg-image', 'url("' + url.replace(/"/g, '\\"') + '")');
+  });
+
+  var startTime = Date.now();
+  var kwhPerSec = 200e9 / (365.25 * 24 * 3600);
+  var gallonsPerSec = kwhPerSec * 18;
+  var co2PerSec = kwhPerSec * 0.548 / 1000;
+
+  function updateLive() {
+    var elapsed = (Date.now() - startTime) / 1000;
+    document.getElementById('live-kwh').textContent = (kwhPerSec * elapsed).toFixed(1);
+    document.getElementById('live-gallons').textContent = Math.round(gallonsPerSec * elapsed).toLocaleString();
+    document.getElementById('live-co2').textContent = (co2PerSec * elapsed).toFixed(2);
+    requestAnimationFrame(updateLive);
+  }
+  updateLive();
+
+  var ctx = document.getElementById('energyChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['2020','2021','2022','2023','2024','2025','2026','2027','2028','2029','2030'],
+      datasets: [
+        { label: 'Non-AI workloads', data: [80,88,96,105,114,120,128,136,145,155,165], backgroundColor: 'rgba(106,98,98,0.45)', stack: 's' },
+        { label: 'AI workloads', data: [8,12,18,28,86,115,150,185,220,265,235], backgroundColor: 'rgba(15,56,121,0.85)', stack: 's' }
+      ]
+    },
+    options: {
+      responsive: true, maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: function(c) { return c.dataset.label + ': ' + c.parsed.y + ' TWh'; } } }
+      },
+      scales: {
+        x: { stacked: true, grid: { color: 'rgba(250,245,237,0.05)' }, ticks: { color: 'rgba(250,245,237,0.45)', font: { family: 'JetBrains Mono', size: 11 } } },
+        y: { stacked: true, grid: { color: 'rgba(250,245,237,0.05)' }, ticks: { color: 'rgba(250,245,237,0.45)', font: { family: 'JetBrains Mono', size: 11 }, callback: function(v) { return v + ' TWh'; } } }
+      }
+    }
+  });
+
+  document.getElementById('chart-legend').innerHTML =
+    '<div style="display:flex;gap:1.5rem;margin-bottom:1rem;font-family:JetBrains Mono,monospace;font-size:11px;color:rgba(250,245,237,0.5);">' +
+    '<span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;border-radius:2px;background:rgba(15,56,121,0.85);display:inline-block;"></span>AI workloads</span>' +
+    '<span style="display:flex;align-items:center;gap:6px;"><span style="width:10px;height:10px;border-radius:2px;background:rgba(106,98,98,0.45);display:inline-block;"></span>Non-AI workloads</span>' +
+    '<span style="color:rgba(250,245,237,0.28);font-size:10px;margin-left:1rem;">2025–2030: projected</span></div>';
+
+  ['prompts','images','videos','searches'].forEach(function(id) {
+    var el = document.getElementById(id);
+    var val = document.getElementById(id + '-val');
+    el.addEventListener('input', function() { val.textContent = el.value; updateCalc(); });
+  });
+
+  function updateCalc() {
+    var prompts = parseInt(document.getElementById('prompts').value);
+    var images = parseInt(document.getElementById('images').value);
+    var videos = parseInt(document.getElementById('videos').value);
+    var searches = parseInt(document.getElementById('searches').value);
+    var kwhYear = prompts * 365 * 0.001862 + images * 52 * 0.01 + videos * 12 * 0.944 + searches * 365 * 0.001490;
+    var waterYear = kwhYear * 1.8;
+    var co2Year = kwhYear * 0.548;
+    document.getElementById('calc-kwh').textContent = kwhYear.toFixed(1);
+    document.getElementById('calc-water').textContent = Math.round(waterYear).toLocaleString();
+    document.getElementById('calc-co2').textContent = co2Year.toFixed(1);
+    document.getElementById('calc-kwh-eq').textContent = '≈ ' + Math.round(kwhYear / 1.2) + ' hours of TV';
+    document.getElementById('calc-water-eq').textContent = '≈ ' + Math.round(waterYear / 8) + ' glasses of water';
+    document.getElementById('calc-co2-eq').textContent = '≈ ' + (co2Year / 2.31).toFixed(1) + ' miles driven';
+  }
+  updateCalc();
+</script>
+</body>
+</html>
