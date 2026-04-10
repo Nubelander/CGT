@@ -9,6 +9,11 @@
   --red-wine: #980204;
   --sunshine: #eab913;
 
+
+
+  /* HC palette */
+  
+
   /* Existing theme tokens remapped */
   --blue: var(--deep-sea);
   --blue-light: var(--sky-blue);
