@@ -12,7 +12,12 @@
 
 
   /* HC palette */
-  
+  --hc-white: #ffffff;
+  --hc-blue: #1D3757;
+  --hc-navy: #111D2C;
+  --hc-accent: #80C7CC;
+  --hc-gray: #AFB3B5;
+  --hc-creme: #D5C1A2;
 
   /* Existing theme tokens remapped */
   --blue: var(--deep-sea);
