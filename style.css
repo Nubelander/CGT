@@ -135,14 +135,14 @@
   --section-bg: rgba(175, 80, 49, 0.86);
   --section-fg: var(--sand);
   --section-muted: rgba(228, 203, 169, 0.75);
-  --section-accent: var(--sky-blue);
+  --section-accent: var(--hc-navy);
 }
 
 .theme-cherry-blossom {
-  --section-bg: rgba(240, 168, 168, 0.70);
+  --section-bg: rgba(0, 0, 0, 0);
   --section-fg: var(--deep-sea);
-  --section-muted: rgba(9, 47, 51, 0.70);
-  --section-accent: var(--red-wine);
+  --section-muted: rgba(9, 47, 51, 0.00);
+  --section-accent: var(--hc-navy);
 }
 
 .theme-red-wine {
@@ -752,6 +752,8 @@ sup.cite {
   padding: 2rem;
   border: 1px solid rgba(250, 245, 237, 0.07);
   border-radius: 4px;
+  background: rgba(232, 229, 225, 0.6);
+  backdrop-filter: blur(4px);
 }
 
 .impact-icon {
@@ -763,13 +765,13 @@ sup.cite {
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
   font-weight: 700;
-  color: var(--cream);
+  color: var(--hc-navy);
   margin-bottom: 0.5rem;
 }
 
 .impact-text {
   font-size: 0.875rem;
-  color: rgba(250, 245, 237, 0.5);
+  color: var(--hc-navy);
   line-height: 1.65;
 }
 
@@ -956,6 +958,11 @@ footer {
   font-weight: 600;
 }
 
+
+#community-impact-section-title {
+  margin-bottom: 150px;
+}
+
 @media (max-width: 768px) {
   .two-col {
     grid-template-columns: 1fr;
@@ -984,3 +991,4 @@ footer {
     padding: 2rem 1.5rem;
   }
 }
+
