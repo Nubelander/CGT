@@ -4,26 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Hidden Cost of AI -Purdue UX × JHU-APL</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300;1,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="knight-cursor"></div>
 
 <div class="reading-progress" id="progress"></div>
 
 <nav>
   <div class="nav-brand">Purdue UX ✦ JHU-APL ✦ SP 2026</div>
   <ul class="nav-links">
+    <li><a href="#top">Home</a></li>
+    <li><a href="#intro">Intro</a></li>
     <li><a href="#data-centers">Data Center</a></li>
     <li><a href="#water">Water</a></li>
     <li><a href="#energy">Energy</a></li>
     <li><a href="#carbon">Carbon</a></li>
     <li><a href="#impact">Impact</a></li>
     <li><a href="#calculator">Your Usage</a></li>
+    <li><a href="#governance">Governance</a></li>
+    <li><a href="#conclusion">Conclusion</a></li>
   </ul>
 </nav>
 
-<section id="" class="hero themed theme-deepsea" data-bg="images/hero.jpg">
+<section id="top" class="hero themed theme-deepsea" data-bg="images/hero.jpg">
   <div class="hero-bg"></div>
   <div class="hero-grid"></div>
   <div class="hero-eyebrow">The Hidden Cost of AI</div>
@@ -68,111 +73,219 @@
 </div>
 
 <hr class="divider">
-
-<section class="themed theme-sand">
+  
+<section id="intro" class="themed theme-sand">
   <div class="section-label">Introduction</div>
-  <div class="two-col">
     <div>
       <h2 class="section-title fade-up">AI is everywhere. Its footprint is <em>invisible.</em></h2>
     </div>
+    <img src="images/intro.jpg" alt="Tro" class="section-img fade-up">
     <div class="body-text fade-up">
-      <p>When you ask an AI chatbot a question, the answer arrives in seconds. What doesn't arrive with it -what never appears on your screen -is the physical cost of that response. Behind every generated sentence is a data center somewhere drawing power from the grid, circulating water through cooling systems, and releasing heat into the atmosphere.</p>
-      <p>These aren't abstract harms. They're measurable, documented, and growing. And because they're hidden from users, they're largely unchecked. The data centers powering AI's rise are the same facilities worsening water scarcity in Phoenix, driving up electricity bills in Virginia, and keeping coal plants online longer than planned.</p>
-      <p>This article exists because transparency shouldn't require a research degree. If you use AI -and you almost certainly do -these numbers belong in your field of view.</p>
+      <br>
+      <p>When a user types a question into an AI chatbot, a response appears in seconds. What does not appear - what is never shown - is the physical infrastructure behind that moment: the acres of server racks, the millions of gallons of water circulating through cooling systems, and the terawatts of power drawn from local energy supply. AI's rapid integration into daily life has created a strange disconnect: its benefits are immediate and personal, but its costs are blurred, remote, and structurally obscured.</p>
+      <p>This disconnect isn't accidental. The dominant narrative surrounding AI emphasizes efficiency, productivity, and innovation. If environmental costs are mentioned at all, it's usually in corporate reports meant for the higher-ups. They aren't meant for the regular users, students, and employees who are interacting with AI constantly. Eighty-six percent of students already use AI tools for academic work (Kelly, 2024), yet very few are aware of the energy or water consumed in the course of those interactions.</p>
+      <p>Transparency shouldn't require a research degree. If you use AI - especially in 2026 - the environmental numbers behind that usage belong in your field of view. This article articulates the scope of the problem, examines why it remains invisible, and makes the case that design and visualization can close that gap.</p>
     </div>
-  </div>
+
 </section>
 
 <hr class="divider">
 
-<section id="data-centers" class="themed theme-sky-blue">
-  <div class="section-label">01 -Data Centers</div>
-  <h2 class="section-title fade-up">The factories of the digital age -built at a scale most people never imagined.</h2>
-  <div class="body-text fade-up" style="margin-bottom: 3rem;">
-    <p>A data center is a facility packed with server racks, cooling systems, and power infrastructure whose sole purpose is to keep software running. The data centers powering modern AI aren't modest warehouses -they are <span class="hl-blue">hyperscale facilities</span> that can span millions of square feet and contain upward of 5,000 servers connected by miles of cabling.</p>
-    <p>More than 1,200 hyperscale facilities operate globally today, expanding rapidly to meet surging demand for AI training and inference workloads. They cluster in specific regions -Virginia, Texas, and Oregon dominate in the US -creating concentrated pressure on local power grids, water supplies, and infrastructure.</p>
+<section id="data-centers" class="themed theme-sky-blue" data-bg="images/white data center.jpg">
+  <div class="section-label">01 - Data Centers</div>
+  <div>
+  <h2 class="section-title fade-up">The factories of the digital age being built at a scale most people never imagined.</h2>
   </div>
+  <h3 class="subsection-title fade-up">Scale and Infrastructure of Data Centers</h3>
+  <div class="body-text fade-up">
+    <p>A data center is a specialized facility designed to house and operate computing infrastructure at a large scale. Unlike traditional server rooms, the facilities powering modern AI workloads are <span class="hl-blue">hyperscale campuses</span> that can span millions of square feet and contain thousands of servers interconnected by miles of cabling. More than 1,200 hyperscale facilities operate globally today, and the number is growing rapidly to accommodate surging demand for AI training and inference workloads (Hosting Journalist, 2024).</p>
+  </div>
+  <img src="images/data center 2.jpg" alt="Engineer walking through server racks in a hyperscale data center" class="section-img fade-up" style="margin: 2rem 0;">
+  <div class="section-img-caption fade-up">Inside a hyperscale data center - rows of servers extending hundreds of feet, operating 24/7.</div>
+  <div class="body-text fade-up" style="margin: 2rem 0;">
+    <p>These facilities cluster in specific geographic corridors. In the US, data centers in Northern Virginia, Central Texas, and Oregon dominate their regions' total capacity, creating concentrated pressure on local power grids, water supplies, and civil infrastructure. Virginia and Oregon now draw 11 to 26 percent of their total regional energy consumption from data centers alone (EPRI, 2024). While a typical AI-focused hyperscale facility annually consumes as much electricity as 100,000 households, the larger sites currently under construction are expected to use 20 times that amount (IEA, 2024).</p>
+    <p>The scale is difficult for users to absorb using conventional comparisons. In 2024, US data centers consumed 183 terawatt-hours (TWh) of electricity - more than 4% of the country's total power use, roughly equivalent to the annual electricity demand of the entire nation of Pakistan (Kelly, 2025). This reflects the current baseline for a sector projected to grow by 133% by the end of the decade.</p>
+  </div>
+
+  <div class="stat-grid fade-up">
+    <div class="stat-cell sc-navy">
+      <div class="stat-cell-label">New datacenters under construction. (US)</div>
+      <div class="stat-cell-num">3000</div>
+    </div>
+    <div class="stat-cell sc-blue">
+      <div class="stat-cell-label">Total electricity use per year (2025)</div>
+      <div class="stat-cell-num">12,000+<span class="stat-cell-unit"> mw</span></div>
+    </div>
+    <div class="stat-cell sc-navy">
+      <div class="stat-cell-label">Total floor space of datacenters. (sq.ft) (US)</div>
+      <div class="stat-cell-num">3,552,000,000</div>
+    </div>
+    <div class="stat-cell sc-cyan">
+      <div class="stat-cell-label">Data center water use (US)(daily)(gallons)</div>
+      <div class="stat-cell-num">449,000,000</div>
+    </div>
+    <div class="stat-cell sc-cyan">
+      <div class="stat-cell-label">Number of AI data centers in the United States.</div>
+      <div class="stat-cell-num">300+</div>
+    </div>
+    <div class="stat-cell sc-navy">
+      <div class="stat-cell-label">Projected energy use growth data centers. (2028)(US)</div>
+      <div class="stat-cell-num">43%</div>
+    </div>
+    <div class="stat-cell sc-cyan">
+      <div class="stat-cell-label">Global energy consumption of data centers (projected 2030)(megawatts)</div>
+      <div class="stat-cell-num">945,000,000</div>
+    </div>
+    <div class="stat-cell sc-navy">
+      <div class="stat-cell-label">% Of water wasted in cooling datacenters</div>
+      <div class="stat-cell-num">30%</div>
+    </div>
+  </div>
+
+  <h3 class="subsection-title fade-up">The AI Inflection Point</h3>
+  <div class="body-text fade-up" style="margin-bottom: 2rem;">
+    <p>Data centers have consumed significant energy for decades, but the emergence of large-scale AI has fundamentally altered their growth trajectory. The IEA (2024) estimates that AI now accounts for approximately 15 percent of all data center energy use globally, with that share growing faster than any other workload category.</p>
+    <p>The computational power required to sustain this consumption is staggering. AI compute doubles approximately every 3.4 months - a pace sustained since 2012 (Amodei &amp; Hernandez, 2018). Training a single large language model requires tens of millions of dollars and enormous quantities of energy. Training GPT-4, by widely cited estimates, required approximately 50 gigawatt-hours of electricity and cost over $100 million (O'Donnell &amp; Crownheart, 2025). That figure represents the training cost alone - it does not include the continuous energy consumed during inference when the model answers billions of queries per day.</p>
+    <p>By 2030, global data center energy demand is projected to reach 1,000 terawatt-hours - enough to power Mexico three times over. Global power demand from data centers is forecasted to surge by 165% compared to 2023 levels (Goldman Sachs Research, 2024). Meeting this through carbon-free energy alone would require approximately 85–90 GW of new nuclear capacity - roughly a 90% increase in current US nuclear generation.</p>
+  </div>
+
   <div class="data-grid fade-up">
     <div class="data-card">
-      <div class="data-card-accent" style="background:#1a4fa0;"></div>
+      <div class="data-card-accent" style="background:#1D3757;"></div>
       <div class="data-card-label">Scale</div>
       <div class="data-card-num">1,200<span class="data-card-unit">+</span></div>
       <div class="data-card-desc">Hyperscale data centers globally -all pivoting aggressively toward AI workloads.</div>
     </div>
     <div class="data-card">
-      <div class="data-card-accent" style="background:#d4811b;"></div>
+      <div class="data-card-accent" style="background:#80C7CC;"></div>
       <div class="data-card-label">Size</div>
       <div class="data-card-num">1M<span class="data-card-unit"> sqft</span></div>
       <div class="data-card-desc">The footprint of a large hyperscale facility -larger than 17 football fields.</div>
     </div>
     <div class="data-card">
-      <div class="data-card-accent" style="background:#c0392b;"></div>
+      <div class="data-card-accent" style="background:#111D2C;"></div>
       <div class="data-card-label">Electricity</div>
-      <div class="data-card-num">80K<span class="data-card-unit"> homes</span></div>
-      <div class="data-card-desc">The largest data centers consume electricity equivalent to 80,000 US households.</div>
+      <div class="data-card-num">100K<span class="data-card-unit"> homes</span></div>
+      <div class="data-card-desc">A typical AI-focused hyperscale facility annually consumes as much electricity as 100,000 US households.</div>
     </div>
     <div class="data-card">
-      <div class="data-card-accent" style="background:#2d7a4f;"></div>
+      <div class="data-card-accent" style="background:#AFB3B5;"></div>
       <div class="data-card-label">Grid share</div>
-      <div class="data-card-num">30–37<span class="data-card-unit">%</span></div>
-      <div class="data-card-desc">Of total energy consumption in Virginia and Oregon comes from data centers alone.</div>
+      <div class="data-card-num">11–26<span class="data-card-unit">%</span></div>
+      <div class="data-card-desc">Of total regional energy consumption in Virginia and Oregon comes from data centers alone (EPRI, 2024).</div>
     </div>
   </div>
   <div class="pull-quote fade-up">
-    <blockquote>"All the data centers in the United States combined would rank as the 4th largest energy consumer in the world -comparable to the electricity use of Spain, the United Kingdom, or Italy."</blockquote>
-    <cite>-Literature Review, Purdue UX × JHU-APL</cite>
+    <blockquote>"By 2030, global data center energy demand is projected to reach 1,000 terawatt-hours - enough to power Mexico three times over. Meeting this through carbon-free energy alone would require roughly 90% more US nuclear capacity."</blockquote>
+    <cite>- IEA (2024); Goldman Sachs Research (2024)</cite>
   </div>
+
+  <h3 class="subsection-title fade-up">A Communication Problem Embedded in an Infrastructure Problem</h3>
+  <div class="body-text fade-up">
+    <p>The invisibility of data center infrastructure is partly geographic - most users have no direct contact with the facilities that serve them - and partly structural. Technology companies are not required to disclose AI-specific energy or water data. Most publish aggregate sustainability metrics that blend AI and non-AI operations, making independent analysis nearly impossible. Voluntary disclosure is uncommon, and what is disclosed is rarely designed to be understood by general audiences.</p>
+    <p>This creates a negative feedback loop: users cannot investigate costs they cannot see, regulators cannot act on data that does not exist in public form, and companies face no meaningful public pressure to improve. The challenge, therefore, is not purely technical. It is also one of design, communication, and access.</p>
+  </div>
+  <img src="images/white data center.jpg" alt="Aerial view of data center rooftop cooling towers" class="section-img fade-up" style="margin: 2rem 0;">
+  <div class="section-img-caption fade-up">Cooling towers on a hyperscale facility rooftop in Northern Virginia - the physical reality of AI infrastructure that most users never see.</div>
 </section>
 
 <hr class="divider">
 
-<section id="water" class="themed theme-deepsea">
-  <div class="section-label">02 -Water Usage</div>
+<section id="water" class="themed theme-deepsea" data-bg="images/water.jpeg">
+  <div class="section-label">02 - Water Usage</div>
+  <div>
   <h2 class="section-title fade-up">AI is thirsty. And it's drinking from communities that can't afford to share.</h2>
-  <div class="two-col" style="margin-bottom: 3rem;">
+</div>
+  <h3 class="subsection-title fade-up">How Data Centers Use Water</h3>
+  <div class="two-col" style="align-items: center;">
     <div class="body-text fade-up">
-      <p>To prevent servers from overheating, data centers pump enormous volumes of water through cooling systems -a process called evaporative cooling that trades electricity for water consumption. A single large hyperscale facility can consume up to <span class="hl-blue">5 million gallons of water per day</span>. That's equivalent to the daily water use of a town of 50,000 people, or 1.8 billion gallons each year from a single building.</p>
-      <p>Most cooling relies on Direct-to-Chip (D2C) liquid cooling, where coolant circulates directly onto hot processor components. Larger facilities sometimes use full immersion cooling -submerging entire server racks in non-conductive liquid. It's more effective but more expensive, and still deeply water-intensive.</p>
-      <p>About two-thirds of all data centers are built in water-stressed regions. Phoenix, AZ -already grappling with one of the worst water crises in American history -hosts a growing cluster of AI infrastructure while its aquifers continue to deplete.</p>
+      <p>To improve server efficiency, data centers employ cooling systems that consume enormous volumes of water. 
+        <p>Most frequently, data centers use evaporative cooling, where water circulates through cooling towers and evaporates to dissipate heat. 
+          <p>A single large hyperscale facility can consume up to <span class="hl-blue">5 million gallons of water per day</span> - equivalent to the daily water use of a city of 50,000 people, or as much as 1.8 billion gallons per year from a single building (Coakley, 2025).</p>
+      <p>More advanced techniques - including direct-to-chip (D2C) liquid cooling and full immersion cooling, in which entire server racks are submerged in non-conductive liquid - are more water-efficient but remain deeply water-intensive at scale. Neither technique eliminates the water footprint; they simply redistribute it (Coakley, 2025).</p>
     </div>
-    <div class="fade-up">
-      <iframe width="500" height="400" allow="local-network-access; geolocation" title="Water Stress v Data Center (henry)" src="https://www.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=012e41bbc8a84a629f1316eb543faeb8&theme=light&legend=true&scroll=false&center=-80.15084897271277,38.2046454209604&scale=9244648.868618">
-    </iframe>
-      <div class="compare-section">
-        <div class="compare-title">Daily Water Consumption -Equivalents</div>
-        <div class="compare-row">
-          <div class="compare-label">1 hyperscale center</div>
-          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#1a4fa0;" data-target="100"></div></div>
-          <div class="compare-value">5M gal</div>
-        </div>
-        <div class="compare-row">
-          <div class="compare-label">Town of 50,000 people</div>
-          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#e5a94a;" data-target="100"></div></div>
-          <div class="compare-value">5M gal</div>
-        </div>
-        <div class="compare-row">
-          <div class="compare-label">Olympic swimming pool</div>
-          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#6a9e6a;" data-target="13"></div></div>
-          <div class="compare-value">660K gal</div>
-        </div>
-        <div class="compare-row">
-          <div class="compare-label">US household (daily)</div>
-          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#7fa8e0;" data-target="2"></div></div>
-          <div class="compare-value">~100 gal</div>
-        </div>
+    <div class="img-column fade-up">
+      <img src="images/how cooling works.png" alt="Diagram showing data center cooling system with cooling tower, chiller, and rear door heat exchanger" class="section-img" style="background: rgba(255,255,255,0.04);">
+      <div class="section-img-caption">Evaporative cooling system schematic server racks</div>
+    </div>
+  </div>
+  <div class="body-text fade-up" style="margin-top: 2rem;">
+    <p>Water consumption in data centers is poorly regulated. Privette, Barros, and Cai (2026) argue in a study published in <em>AGU Advances</em> that data center water footprints urgently require greater transparency, noting that current reporting frameworks are inadequate to capture the scale or geographic distribution of water use. Communities near major data centers often lack basic information about how much water is being withdrawn from shared aquifers.</p>
+    <br>
+  </div>
+
+  <h3 class="subsection-title fade-up">Geographic Concentration in Water-Stressed Regions</h3>
+    <div class="body-text fade-up">
+      <p>Approximately two-thirds of all data centers globally are built in water-stressed regions (Walker &amp; Goldsmith, 2026). This is intentional. Data center siting decisions are driven by land cost, energy access, tax incentives, and regulatory environments - not by water availability. The consequence is that facilities consuming millions of gallons per day are being constructed in areas where water scarcity is already a pressing crisis.</p>
+      <p>Phoenix, Arizona, is the most prominent US example. Already grappling with one of the most severe water crises in American history - its primary source, Lake Mead, has reached historic lows - the Phoenix metro continues to attract AI infrastructure investment at a rapid pace (Grist, 2026). Aquifer depletion is accelerating, and local communities, particularly lower-income and indigenous communities that rely on groundwater, bear the greatest risk.</p>
+      <br>
+      <div class="fade-up">
+        <img src="images/water stressed.jpg" alt="Arizona desert landscape - Red Rock country near Sedona, one of many water-stressed regions attracting data center development" class="section-img">
+        <div class="section-img-caption">Arizona's Sedona region - part of the water-stressed American Southwest where data center development is accelerating despite severe aquifer depletion.</div>
       </div>
+      <p>As Gorey (2025) documents in <em>Land Lines</em>, the land and water impacts of the AI boom extend well beyond Phoenix. Rural communities across the American West are experiencing aquifer depletion, sediment contamination of local waterways, and conflict over industrial water rights - often without access to the data they would need to understand or challenge what is happening.</p>
+      <br>
     </div>
+
+  <h3 class="subsection-title fade-up">Communicating Water Cost</h3>
+  <div class="compare-section fade-up">
+    <div class="compare-title">Daily Water Consumption - Equivalents</div>
+    <div class="compare-row">
+      <div class="compare-label">1 hyperscale center</div>
+      <div class="compare-bar-wrap"><div class="compare-bar" style="background:#1D3757;" data-target="100"></div></div>
+      <div class="compare-value">5M gal</div>
+    </div>
+    <div class="compare-row">
+      <div class="compare-label">Town of 50,000 people</div>
+      <div class="compare-bar-wrap"><div class="compare-bar" style="background:#D5C1A2;" data-target="100"></div></div>
+      <div class="compare-value">5M gal</div>
+    </div>
+    <div class="compare-row">
+      <div class="compare-label">Olympic swimming pool</div>
+      <div class="compare-bar-wrap"><div class="compare-bar" style="background:#80C7CC;" data-target="13"></div></div>
+      <div class="compare-value">660K gal</div>
+    </div>
+    <div class="compare-row">
+      <div class="compare-label">US household (daily)</div>
+      <div class="compare-bar-wrap"><div class="compare-bar" style="background:#AFB3B5;" data-target="2"></div></div>
+      <div class="compare-value">~100 gal</div>
+    </div>
+  </div>
+  <div class="body-text fade-up">
+    <p>One reason water consumption receives less public attention than carbon emissions is that water lacks a standardized unit of moral legibility. "Metric tons of CO₂" has achieved cultural understanding through decades of climate communication; "gallons per query" has not. Making data center water consumption comprehensible requires contextualized measurements - comparing facility consumption to household use, local aquifer capacity, or the daily water needs of surrounding communities.</p>
+    <p>When five million gallons per day is expressed as the water use of 50,000 people, the number becomes a community - not an abstraction.</p>
   </div>
 </section>
 
 <hr class="divider">
 
-<section id="energy" class="themed theme-moss-green" data-bg="images/hero.jpg">
-  <div class="section-label">03 -Energy Consumption</div>
+<section id="energy" class="themed theme-moss-green">
+  <div class="section-label">03 - Energy Consumption</div>
+  <div>
   <h2 class="section-title fade-up">The computing power required to train AI has increased 300,000× since 2012.</h2>
-  <div class="body-text fade-up" style="margin-bottom: 3rem;">
-    <p>AI models require GPUs -graphics processing units -that consume roughly <span class="hl-amber">74% of the power of an average PC</span> compared to a CPU's 9%. Half of all data center electricity is spent training AI models. Another 40% goes to HVAC and cooling. A single ChatGPT prompt uses roughly 10× more electricity than a standard Google search. An AI-generated 5-second video consumes enough energy to run a microwave for over an hour.</p>
-    <p>The scale compounds quickly. ChatGPT processes an estimated 1 billion prompts per day -consuming 109 gigawatt-hours daily. That's enough to power 10,400 homes for an entire year, every single day.</p>
+  </div>
+  <h3 class="subsection-title fade-up">AI's Disproportionate Energy Cost</h3>
+  <div class="body-text fade-up" style="margin-bottom: 2rem;">
+    <p>Not all computing tasks are energetically equivalent. A single ChatGPT prompt uses roughly <span class="hl-amber">10× more electricity</span> than a standard Google search (Dastin &amp; Nellis, 2023). A five-second AI-generated video consumes enough energy to run a microwave for over an hour. The GPUs optimized for AI's parallel matrix computations consume roughly 74% of the power of an average personal computer as a standalone component, compared to roughly 9% for a CPU. Half of all data center electricity is spent running AI training and inference workloads; another 40% is consumed by HVAC and cooling systems (Deloitte, 2024).</p>
+    <p>These figures are individually negligible. Collectively, they are not. ChatGPT alone processes an estimated 1 billion prompts per day, consuming approximately 109 gigawatt-hours of electricity daily - enough to power 10,400 American homes for an entire year. When similar consumption is aggregated across dozens of commercial AI systems, the total represents one of the fastest-growing categories of industrial energy demand in the world.</p>
+  </div>
+  <div class="chart-wrap fade-up">
+    <div id="chart-legend"></div>
+    <div class="chart-title">Projected global data center energy consumption (TWh)</div>
+    <div style="position: relative; height: 280px;">
+      <canvas id="energyChart"></canvas>
+    </div>
+    <div class="fig-caption">Fig. 1 -Stacked bar chart showing historical and projected global data center energy use, split between AI and non-AI workloads. Sources: IEA (2024)<sup class="cite">[3]</sup>; Lawrence Berkeley National Laboratory (2024)<sup class="cite">[5]</sup>. Values from 2025 onward are projections.</div>
+  </div>
+
+  <h3 class="subsection-title fade-up">Historical Trajectory</h3>
+  <div class="body-text fade-up" style="margin-bottom: 2rem;">
+    <p>The growth of AI's energy footprint follows a trajectory that is difficult to visualize at a human scale. In 2012, training a large model cost the equivalent of approximately 2.8 gigawatt-hours - roughly equivalent to three nuclear power plants running for one hour (Knight, 2020). By 2024, the compute required had grown by more than 300,000-fold.</p>
+    <p>While individual hardware has become more energy efficient over time, the rate of efficiency improvement has been overwhelmed by the rate of demand growth. US data centers consumed 4% of total national electricity in 2023 and 2024, projected to rise to 12% by 2030 (Venditti, 2025).</p>
+  </div>
+  <div class="editorial-oversized fade-up">
+    <div class="eo-text">Efficiency gains are being consumed by scale rather than translating into reduced total consumption.</div>
+    <div class="eo-label">Energy paradox - Jevons effect at data center scale</div>
   </div>
 
   <div class="live-counter-bar fade-up">
@@ -203,7 +316,7 @@
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2018</div>
-      <div class="timeline-text">Training a large NLP model at UMass Amherst found to emit <strong>~300,000 kg of CO₂</strong> -equivalent to 125 round trips between New York and Beijing.<sup class="cite">[2]</sup> Computing power needed has grown <strong>300,000× since 2012</strong>.<sup class="cite">[1]</sup></div>
+      <div class="timeline-text">Training a single large NLP model at UMass Amherst emitted approximately <strong>626,000 kg of CO₂</strong> -equivalent to 250 round-trip flights between New York and Beijing.<sup class="cite">[2]</sup> Computing power needed has grown <strong>300,000× since 2012</strong>.<sup class="cite">[1]</sup></div>
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2023–2024</div>
@@ -211,17 +324,28 @@
     </div>
     <div class="timeline-item">
       <div class="timeline-year">2030 (projected)</div>
-      <div class="timeline-text">Energy demand expected to reach <strong>400 TWh</strong> -enough to power Mexico.<sup class="cite">[3]</sup> Data center count may grow by <strong>165%</strong> by decade's end, requiring a 50% increase in US nuclear reactor capacity just to avoid fossil fuel reliance.<sup class="cite">[5]</sup></div>
+      <div class="timeline-text">Global data center energy demand projected to reach <strong>1,000 TWh</strong> -enough to power Mexico three times over.<sup class="cite">[3]</sup> Global power demand from data centers forecasted to surge by <strong>165%</strong> vs. 2023 levels. Meeting this through carbon-free energy alone would require approximately <strong>85–90 GW of new nuclear capacity</strong> -roughly a 90% increase in current US nuclear generation.<sup class="cite">[5]</sup></div>
     </div>
   </div>
 
-  <div class="chart-wrap fade-up">
-    <div id="chart-legend"></div>
-    <div class="chart-title">Projected global data center energy consumption (TWh)</div>
-    <div style="position: relative; height: 280px;">
-      <canvas id="energyChart"></canvas>
+  <h3 class="subsection-title fade-up">The Grid at Stress</h3>
+  <img src="images/electricty.png" alt="Electrical substation infrastructure supporting data center power demands" class="section-img fade-up">
+  <div class="section-img-caption fade-up">High-voltage substation infrastructure - utilities across Virginia, Texas, and Oregon are scrambling to build transmission capacity for AI workload expansion.</div>
+  <br>
+  <div class="body-text fade-up" style="margin-bottom: 2rem;">
+    <p>The rapid concentration of data center demand in specific geographic corridors is creating measurable stress on regional power grids. Data center energy needs are upending power grid planning in Virginia, Texas, Georgia, and Oregon - regions where utility systems were not designed to accommodate additions of hundreds of megawatts from single facilities within compressed development timelines (EESI, 2025).</p>
+    <p>When demand spikes, grid operators increasingly rely on aging fossil fuel generation that would otherwise be decommissioned. AI's growth is not merely adding to total emissions - it is actively extending the operational lifespan of the dirtiest energy generation assets on the grid. This dynamic represents a direct coupling between AI adoption rates and the pace of the energy transition.</p>
+  </div>
+  <div class="body-text fade-up">
+    <br>
+    <p>The source of that electricity matters enormously. Countries vary widely in how much of their data center power comes from renewable versus fossil fuel sources - a gap that directly determines the real-world carbon cost of AI computation.</p>
+  </div>
+
+  <div class="viz-chart-wrap fade-up">
+    <div class="viz-chart-title">Data Center Energy Usage, Clean vs Dirty</div>
+    <div style="position: relative; height: 300px; margin-top: 1.5rem; background: rgba(255,255,255,0.96); border-radius: 4px; padding: 14px; border: 1px solid rgba(17,29,44,0.12);">
+      <canvas id="cleanDirtyChart"></canvas>
     </div>
-    <div class="fig-caption">Fig. 1 -Stacked bar chart showing historical and projected global data center energy use, split between AI and non-AI workloads. Sources: IEA (2024)<sup class="cite">[3]</sup>; Lawrence Berkeley National Laboratory (2024)<sup class="cite">[5]</sup>. Values from 2025 onward are projections.</div>
   </div>
 
   <div class="section-citations fade-up">
@@ -238,83 +362,190 @@
 
 <hr class="divider">
 
-<section id="carbon" class="themed theme-terracotta">
-  <div class="section-label">04 -Carbon Emissions</div>
-  <h2 class="section-title fade-up">The carbon cost is real -and deliberately hard to measure.</h2>
-  <div class="two-col">
-    <div class="body-text fade-up">
-      <p>In 2023, US data centers generated approximately <span class="hl-red">105 million metric tons of CO₂ equivalent</span> -about 2.18% of all US energy-related emissions. That's a threefold increase from 2018. The average carbon intensity of data center electricity is 48% higher than the national average.</p>
-      <p>Companies aren't required to distinguish carbon emissions from AI versus general data center activity. Most emissions come from indirect Scope 2 and Scope 3 sources, making independent analysis nearly impossible and voluntary disclosure the exception rather than the rule.</p>
-      <p>When demand spikes, aging coal infrastructure that would otherwise be decommissioned gets called back online. AI's growth is actively extending the lifespan of the dirtiest power sources in the grid.</p>
+<section id="carbon" class="themed theme-terracotta" data-bg="images/carbon.jpeg">
+  <div class="section-label">04 - Carbon Emissions</div>
+  <div>
+  <h2 class="section-title fade-up">The carbon cost is real and deliberately hard to measure.</h2>
+  </div>
+  <div class="editorial-split-reveal fade-up">
+    <div class="esr-left">The invisibility of AI's environmental footprint is not simply a consequence of complexity.</div>
+    <div class="esr-right">That invisibility is an intentional choice.</div>
+  </div>
+
+  <h3 class="subsection-title fade-up">Magnitude and Growth</h3>
+  <div class="body-text fade-up" style="margin-bottom: 2.5rem;">
+    <p>In 2023, US data centers generated approximately <span class="hl-red">105 million metric tons of CO₂</span> - about 2.18% of all US energy-related emissions, a threefold increase from 2018 (Guidi et al., 2024). The average carbon intensity of data center electricity is 48% higher than the national grid average, reflecting the concentration of facilities in regions with coal- and gas-heavy generation mixes. Ninety-five percent of data centers operate in regions with dirtier-than-average electricity.</p>
+    <p>Hao (2019) documented in <em>MIT Technology Review</em> that training a single large NLP model at UMass Amherst emitted approximately 626,000 kilograms of CO₂ - equivalent to 250 round-trip flights between New York and Beijing. That figure, once striking, now represents the low end of training costs for frontier models whose computational requirements have grown by orders of magnitude since 2019.</p>
+  </div>
+
+  <div class="viz-chart-wrap fade-up">
+    <div class="viz-chart-title">Carbon Emissions</div>
+    <div style="position: relative; height: 320px; margin-top: 1.5rem;">
+      <canvas id="carbonChart"></canvas>
     </div>
-    <div class="fade-up">
-      <div class="data-grid" style="grid-template-columns: 1fr 1fr;">
-        <div class="data-card">
-          <div class="data-card-accent" style="background:#c0392b;"></div>
-          <div class="data-card-label">2023 US total</div>
-          <div class="data-card-num">105M<span class="data-card-unit"> MT</span></div>
-          <div class="data-card-desc">Metric tons CO₂e from US data centers -3× the 2018 estimate.</div>
-        </div>
-        <div class="data-card">
-          <div class="data-card-accent" style="background:#d4811b;"></div>
-          <div class="data-card-label">One model training</div>
-          <div class="data-card-num">300K<span class="data-card-unit"> kg</span></div>
-          <div class="data-card-desc">Carbon cost of training one large language model -equal to 125 NYC–Beijing flights.</div>
-        </div>
-        <div class="data-card">
-          <div class="data-card-accent" style="background:#1a4fa0;"></div>
-          <div class="data-card-label">Carbon intensity</div>
-          <div class="data-card-num">+48<span class="data-card-unit">%</span></div>
-          <div class="data-card-desc">Higher CO₂ intensity in data centers vs. the US national electricity average.</div>
-        </div>
-        <div class="data-card">
-          <div class="data-card-accent" style="background:#666;"></div>
-          <div class="data-card-label">Dirty grid share</div>
-          <div class="data-card-num">95<span class="data-card-unit">%</span></div>
-          <div class="data-card-desc">Of data centers operate in regions with dirtier-than-average electricity.</div>
-        </div>
-      </div>
+    <div class="viz-chart-source">Source: Emma Strubell, Carnegie Mellon University</div>
+  </div>
+
+  <h3 class="subsection-title fade-up">Measurement Opacity</h3>
+  <img src="images/lack of transparency.jpg" alt="Trap" class="section-img fade-up">
+  <div class="section-img-caption fade-up">Corporate AI emissions data is deliberately obscured - available in aggregate sustainability reports but never broken down by product or workload.</div>
+  <div class="two-col" style="margin-bottom: 2rem; align-items: start;">
+  <div class="body-text fade-up" style="margin: 2rem 0;">
+      <p>A critical obstacle to accountability is the near-total lack of transparency in emissions reporting at the AI level. Companies are not required to distinguish carbon emissions produced by AI workloads from those attributable to other data center activities. Most reported emissions come from indirect Scope 2 and Scope 3 categories - which require assumptions and methodologies that vary across reporters and are not subject to independent verification (Gelbart, 2025).</p>
+      <p>This reporting structure makes it virtually impossible for external researchers, regulators, or the public to construct an accurate picture of AI's specific contribution to corporate emissions profiles. Voluntary disclosure initiatives are not standardized, not audited, and not detailed enough to support meaningful analysis.</p>
     </div>
+    <div class="img-column fade-up">
+      <img src="images/scopes.png" alt="Diagram showing Scopes 1, 2, and 3 of emissions - direct and indirect emissions categories" class="section-img" style="background: rgba(255,255,255,0.94);">
+      <div class="section-img-caption">Scopes 1, 2, and 3 emissions framework - AI companies primarily report Scope 2 (indirect, energy/utilities) and Scope 3 (indirect, supply chain) with no AI-specific breakdown required.</div>
+    </div>
+  </div>
+
+  <div class="data-grid fade-up">
+    <div class="data-card">
+      <div class="data-card-accent" style="background:#80C7CC;"></div>
+      <div class="data-card-label">2023 US total</div>
+      <div class="data-card-num">105M<span class="data-card-unit"> MT</span></div>
+      <div class="data-card-desc">Metric tons CO₂e from US data centers - 3× the 2018 estimate.</div>
+    </div>
+    <div class="data-card">
+      <div class="data-card-accent" style="background:#AFB3B5;"></div>
+      <div class="data-card-label">Carbon intensity</div>
+      <div class="data-card-num">+48<span class="data-card-unit">%</span></div>
+      <div class="data-card-desc">Higher CO₂ intensity in data centers vs. the US national electricity average.</div>
+    </div>
+    <div class="data-card">
+      <div class="data-card-accent" style="background:#AFB3B5;"></div>
+      <div class="data-card-label">Dirty grid share</div>
+      <div class="data-card-num">95<span class="data-card-unit">%</span></div>
+      <div class="data-card-desc">Of data centers operate in regions with dirtier-than-average electricity.</div>
+    </div>
+    <div class="data-card">
+      <div class="data-card-accent" style="background:#80C7CC;"></div>
+      <div class="data-card-label">Share of total US emissions</div>
+      <div class="data-card-num">2<span class="data-card-unit">%</span></div>
+      <div class="data-card-desc">Data centers' carbon emissions as a share of all US carbon emissions (2025).</div>
+    </div>
+  </div>
+
+  <h3 class="subsection-title fade-up">Emission Reduction Pathways</h3>
+  <div class="body-text fade-up" style="margin: 2rem 0;">
+    <p>The absence of transparency does not mean the absence of viable solutions. Research has identified several technically feasible strategies for significantly reducing AI's carbon footprint without sacrificing capability. Shifting computation to times and regions with higher renewable energy availability - known as temporal flexibility - could reduce carbon emissions by up to <strong>41.2%</strong> with no loss in model accuracy (Xu et al., 2025). Transitioning to single-phase immersion cooling technology can reduce a data center's energy usage by <strong>60%</strong> (Dow, 2023).</p>
+    <p>These interventions require coordination between AI companies, grid operators, and regulators, but they are neither technically infeasible nor economically prohibitive. What they require, above all, is visibility - a public and institutional understanding of the problem significant enough to generate the pressure that drives adoption.</p>
   </div>
 </section>
 
 <hr class="divider">
 
-<section id="impact" class="themed theme-cherry-blossom">
+<section id="impact" class="themed theme-cherry-blossom" data-bg="images/community_impact.jpeg">
   <div class="section-label">05 -Community Impact</div>
+  </div>
+  <div>
   <h2 class="section-title fade-up">The data centers aren't in your neighborhood. Their effects might be.</h2>
-  <div class="body-text fade-up" style="margin-bottom: 3rem;">
-    <p>Data center development concentrates in specific corridors -northern Virginia, central Oregon, the Phoenix metro. For communities in these zones, the consequences extend far beyond abstract emissions data. They appear on utility bills, in groundwater reports, and in the low hum from nearby facilities that residents can feel through their walls.</p>
+  </div>
+  <div class="two-col" style="margin-bottom: 2rem; align-items: center;">
+    <div class="body-text fade-up">
+      <p>Data center development concentrates in specific corridors - northern Virginia, central Oregon, the Phoenix metro. For communities in these zones, the consequences extend far beyond abstract emissions data. They appear on utility bills, in groundwater reports, and in the low hum from nearby facilities that residents can feel through their walls. The people who benefit from AI and the people who bear its costs are rarely the same.</p>
+    </div>
+  <div class="fade-up" style="margin: 2rem 0;">
+    <iframe width="100%" height="360" allow="local-network-access; geolocation" title="Water Stress vs Data Center locations" src="https://www.arcgis.com/apps/mapviewer/index.html?configurableview=true&webmap=012e41bbc8a84a629f1316eb543faeb8&theme=light&legend=true&scroll=false&center=-80.15084897271277,38.2046454209604&scale=9244648.868618" style="border:none; border-radius:2px; display:block;"></iframe>
+    <div class="section-img-caption" style="margin-top: 0.6rem;">Map of data center locations and water stress areas in the United States.</div>
+  </div>
   </div>
   <div class="impact-grid fade-up">
     <div class="impact-card">
-      <div class="impact-icon"></div>
+      <div class="impact-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
       <div class="impact-heading">Rising electricity costs</div>
-      <div class="impact-text">70% of electrical grid nodes experiencing price increases are within 50 miles of a data center. Some areas have seen electricity costs jump as much as 267% over five years.</div>
+      <div class="impact-text">70% of electrical grid nodes experiencing price increases are within 50 miles of a data center. Some markets have seen electricity costs increase as much as 267% over five years -a burden that falls disproportionately on residential customers who lack the negotiating leverage of large industrial users.</div>
     </div>
     <div class="impact-card">
-      <div class="impact-icon"></div>
-      <div class="impact-heading">Water competition</div>
-      <div class="impact-text">About two-thirds of data centers are built in water-stressed areas. Local aquifers face increased depletion, and sediment from industrial-scale consumption interferes with pipes and nearby bodies of water.</div>
+      <div class="impact-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg></div>
+      <div class="impact-heading">Water and land competition</div>
+      <div class="impact-text">About two-thirds of data centers are built in water-stressed areas. Aquifer depletion affects rural water supplies, with sediment from industrial-scale water use contaminating pipes and nearby waterways. Large hyperscale campuses exceed 1 million square feet and require road, power, and water infrastructure that alters the surrounding landscape -often through permitting processes with inadequate public participation.</div>
     </div>
     <div class="impact-card">
-      <div class="impact-icon"></div>
-      <div class="impact-heading">Quality of life</div>
-      <div class="impact-text">Low-frequency vibrations from data center operations affect surrounding homes. Research links persistent low-frequency noise to physical anxiety and cardiovascular stress in nearby residents.</div>
+      <div class="impact-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+      <div class="impact-heading">Environmental justice</div>
+      <div class="impact-text">In Memphis, Tennessee, Elon Musk's xAI data center cluster operated gas turbines without proper air quality permits, raising serious public health concerns for a predominantly Black community already bearing disproportionate industrial air pollution burdens. This reflects a broader pattern in which data center siting externalizes costs onto communities with limited political and legal resources to resist or remediate them.</div>
     </div>
     <div class="impact-card">
-      <div class="impact-icon"></div>
+      <div class="impact-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg></div>
       <div class="impact-heading">Economic illusion</div>
-      <div class="impact-text">Construction creates temporary local employment, but few permanent jobs remain post-build. Large tax incentives offered to attract facilities mean actual community tax revenue falls far short of projections.</div>
+      <div class="impact-text">The promise that data centers create jobs and tax revenue has proven substantially overstated. Construction creates temporary employment, but post-construction operations require relatively few workers. Large tax incentive packages mean actual municipal revenue often falls far short of projections -leaving communities with infrastructure obligations and environmental burdens but little of the promised benefit.</div>
+    </div>
+  </div>
+  <div class="location-grid fade-up">
+    <div class="location-card">
+      <div class="location-pin">
+        <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+          <circle cx="12" cy="9" r="2.5"/>
+        </svg>
+      </div>
+      <div class="location-city">Virginia, USA</div>
+      <div class="location-sub">Over +100 Hyper-scale Data Centers Consuming 25% of Virginia's Energy</div>
+      <ul class="location-list">
+        <li>Rising Utility Costs (&gt;200% increase)</li>
+        <li>High Land Consumption</li>
+        <li>Rising Water Usage Concerns</li>
+      </ul>
+    </div>
+    <div class="location-card lc-accent">
+      <div class="location-pin">
+        <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+          <circle cx="12" cy="9" r="2.5"/>
+        </svg>
+      </div>
+      <div class="location-city">Texas, USA</div>
+      <div class="location-sub">Over +400 Data Centers with a significant amount still being constructed</div>
+      <ul class="location-list">
+        <li>Uses roughly 25 billion gallons of water per year</li>
+        <li>Rising Power Consumption (&gt;70%)</li>
+        <li>Potentially Largest amount of Data centers by 2030</li>
+      </ul>
+    </div>
+    <div class="location-card">
+      <div class="location-pin">
+        <svg viewBox="0 0 24 24" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+          <circle cx="12" cy="9" r="2.5"/>
+        </svg>
+      </div>
+      <div class="location-city">Indiana, USA</div>
+      <div class="location-sub">Over +100 Hyper-scale Data Centers Consuming 25% of Indiana's Energy</div>
+      <ul class="location-list">
+        <li>Destroying Vital Wetlands</li>
+        <li>Local Water Table Impacted (Kankakee Aquifer)</li>
+        <li>Rising Water Usage Concerns</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="body-text fade-up" style="margin: 2.5rem 0;">
+    <p>Low-frequency vibrations from data center operations affect surrounding homes and have been linked to physical anxiety, sleep disruption, and cardiovascular stress in nearby residents. The communities most exposed to these effects are often those that had the least voice in siting decisions. The economic narrative used to justify these placements - that data centers create jobs and tax revenue - has also proven substantially overstated. Construction creates temporary employment, but post-construction operations require relatively few workers. Large tax incentive packages mean actual municipal revenue often falls far short of projections, leaving communities with infrastructure obligations and environmental burdens but little of the promised benefit.</p>
+  </div>
+  <img src="images/protest.jpg" alt="Comm" class="section-img fade-up" >
+  <div class="section-img-caption fade-up">Community members in Texas protesting data center development - a bipartisan grassroots opposition that has delayed or canceled over $64 billion in projects nationwide.</div>
+
+  <div class="editorial-diptych fade-up">
+    <div class="ed-half">
+      <div class="ed-word">Simple.</div>
+      <div class="ed-sentence">The core problem is simple. The costs are real, measurable, and growing - they are just hidden from the people bearing them.</div>
+    </div>
+    <div class="ed-half">
+      <div class="ed-word">Structural.</div>
+      <div class="ed-sentence">The challenge is structural. Disclosure is voluntary, siting decisions ignore water stress, and the communities most affected have no say.</div>
     </div>
   </div>
 </section>
 
 <hr class="divider">
 
-<section id="calculator" class="themed theme-sunshine">
+<section id="calculator" class="themed theme-sunshine" data-bg="images/your_usage.jpeg">
   <div class="section-label">06 -Your Usage</div>
+  <div>
   <h2 class="section-title fade-up">What does your AI habit actually cost?</h2>
+  </div>
   <div class="body-text fade-up" style="margin-bottom: 2rem;">
     <p>One ChatGPT prompt uses roughly 10× more electricity than a standard Google search. A single AI-generated video consumes enough energy to run a microwave for over an hour. Individually these costs feel negligible. Collectively -across a billion daily users -they constitute one of the fastest-growing sources of industrial energy demand on Earth. Use the estimator below to see your annual footprint.</p>
   </div>
@@ -355,17 +586,17 @@
     </div>
     <div class="calc-results">
       <div class="calc-result-item">
-        <div class="calc-result-num" id="calc-kwh">—</div>
+        <div class="calc-result-num" id="calc-kwh">-</div>
         <div class="calc-result-unit">kWh / year</div>
         <div class="calc-equiv" id="calc-kwh-eq"></div>
       </div>
       <div class="calc-result-item">
-        <div class="calc-result-num" id="calc-water">—</div>
+        <div class="calc-result-num" id="calc-water">-</div>
         <div class="calc-result-unit">gallons water / year</div>
         <div class="calc-equiv" id="calc-water-eq"></div>
       </div>
       <div class="calc-result-item">
-        <div class="calc-result-num" id="calc-co2">—</div>
+        <div class="calc-result-num" id="calc-co2">-</div>
         <div class="calc-result-unit">kg CO₂ / year</div>
         <div class="calc-equiv" id="calc-co2-eq"></div>
       </div>
@@ -375,40 +606,85 @@
 
 <hr class="divider">
 
-<section>
-  <div class="section-label">07 -What Comes Next</div>
-  <h2 class="section-title fade-up">Knowing is the first step. Demanding transparency is the second.</h2>
-  <div class="two-col">
+<section id="governance">
+  <div class="section-label">07 - Governance &amp; What Comes Next</div>
+  <div class="editorial-punch fade-up" style="margin-bottom: 0rem;">
+    <div class="ep-text">Awareness <em class="ep-em">is the first step.</em></div>
+    <div class="ep-tag">Policy levers exist.<br>Visibility is the first one.</div>
+  </div>
+
+  <h3 class="subsection-title fade-up">The Role of Policy</h3>
+  <div class="two-col" style="margin-bottom: 2rem; align-items: center;">
     <div class="body-text fade-up">
-      <p>The path forward isn't to stop using AI. It's to use it knowingly, and to demand that the industry bear its externalities transparently. Several mechanisms could meaningfully shift the trajectory.</p>
-      <p>Shifting AI computation to times and regions with higher renewable energy availability -<span class="hl-blue">temporal flexibility</span> -could reduce carbon emissions by up to 35% with no loss in model accuracy. Pausing training during high-emission grid periods adds another 25% reduction. Mandatory energy and water reporting from data center operators -currently voluntary -would allow regulators to act on real data rather than estimates.</p>
-      <p>The questions are no longer whether these impacts exist. They clearly do. The questions now are about who is responsible for measuring them, disclosing them, and changing course before the costs become irreversible.</p>
+      <p>Transparency alone cannot solve the problem, but it is a necessary precondition for the policy interventions that could. 
+        <p>Mandatory energy and water reporting from data center operators would allow regulators to act on real data rather than estimates. 
+       <p>Oregon HB 3698 (2025) illustrates this approach, as it would require data centers to report quarterly energy and water 
+        consumption while setting emissions standards for on-site generators. 
+        <p>Standardized, AI-specific emissions metrics - 
+        similar to fuel economy standards in the automotive sector - would give consumers and policymakers the tools to 
+        evaluate corporate performance and set improvement targets.</p>
+      <p>Geographic siting requirements that account for water availability and grid carbon intensity could reduce the concentration of water-intensive facilities in stressed regions. Indiana HB 1210 (2026) required data centers receiving tax exemptions to share savings with local governments. In Georgia, SB 410 (2026), which would have repealed the state's data center tax exemption, passed the Senate but was blocked in the House - demonstrating both growing political pressure and the industry's continued lobbying power.</p>
     </div>
-    <div class="fade-up">
+    <div class="policy-side fade-up">
+      <img src="images/lesgislative sesison.jpg" alt="State legislator speaking at podium during legislative session on data center regulation" class="section-img">
+      <div class="section-img-caption" style="margin-top: 1rem;">State legislators are increasingly introducing data center disclosure and siting requirements - a shift driven by constituent pressure over rising electricity bills and water usage.</div>
       <div class="compare-section">
         <div class="compare-title">Potential Emission Reduction Strategies</div>
         <div class="compare-row">
-          <div class="compare-label">Shift to green energy regions</div>
-          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#2d7a4f;" data-target="35"></div></div>
-          <div class="compare-value">−35%</div>
+          <div class="compare-label">Temporal flexibility (load shifting)</div>
+          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#80C7CC;" data-target="41"></div></div>
+          <div class="compare-value">−41.2%</div>
         </div>
         <div class="compare-row">
-          <div class="compare-label">Pause during high-emission hours</div>
-          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#4a9e8a;" data-target="25"></div></div>
+          <div class="compare-label">Single-phase immersion cooling</div>
+          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#D5C1A2;" data-target="60"></div></div>
+          <div class="compare-value">−60% energy</div>
+        </div>
+        <div class="compare-row">
+          <div class="compare-label">Pause training during high-emission hours</div>
+          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#AFB3B5;" data-target="25"></div></div>
           <div class="compare-value">−25%</div>
         </div>
         <div class="compare-row">
-          <div class="compare-label">Temporal flexibility scheduling</div>
-          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#7fa8e0;" data-target="20"></div></div>
-          <div class="compare-value">−20%</div>
-        </div>
-        <div class="compare-row">
-          <div class="compare-label">Improved immersion cooling</div>
-          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#a88a4a;" data-target="15"></div></div>
-          <div class="compare-value">−15%</div>
+          <div class="compare-label">Mandatory disclosure + siting reform</div>
+          <div class="compare-bar-wrap"><div class="compare-bar" style="background:#1D3757;" data-target="20"></div></div>
+          <div class="compare-value">policy lever</div>
         </div>
       </div>
     </div>
+</div>
+
+  <h3 class="subsection-title fade-up">The Role of Industry</h3>
+  <div class="fade-up">
+    <img src="images/report.png" alt="State legislator speaking at podium during legislative session on data center regulation" class="section-img">
+    <div class="section-img-caption">Reported emissions data from AI companies is often incomplete and lacks granularity - making it difficult to assess the specific environmental impact of AI workloads.</div>
+  </div>
+  <div class="body-text fade-up" style="margin-bottom: 2rem;">
+    <br>
+    <p>Technology companies have the most power to reduce AI's environmental footprint and, so far, the least incentive to do so without regulatory or public pressure. Some have made genuine commitments to renewable energy; far fewer have committed to reducing total consumption or disclosing granular data about specific products.</p>
+    <p>The solutions aren't hypothetical. Shifting computation to times and regions with cleaner grids, pausing training during high-emission periods, and adopting immersion cooling are all achievable with existing technology. The question isn't whether these improvements are possible - it's what combination of pressure, regulation, and competitive incentive will make them standard practice.</p>
+  </div>
+
+  <h3 class="subsection-title fade-up">The Role of Users &amp; Slowing the Spread</h3>
+  <div class="fade-up">
+    <img src="images/AI users.jpg" alt="AI in college" class="section-img">
+    <div class="section-img-caption">AI users in College</div>
+  </div>
+  <div class="body-text fade-up" style="margin-bottom: 2rem;">
+    <p>Individual users occupy an awkward position. No single person's usage will move the needle on an industrial-scale problem. But collective behavior shapes industrial priorities, and user demand for transparency - through feedback, advocacy, or purchasing choices - is one of the few steps that reaches the people making consequential infrastructure decisions.</p>
+    <p>With growing public awareness and more local legislation being passed, a significant number of data centers have been delayed or canceled, totaling <strong>$64 billion</strong> (Data Center Watch, 2025). This shift illustrates growing concern from local communities. The opposition is bipartisan in nature: Democrats have concerns with environmental damage and resource usage, while Republicans focus on energy grid integrity and strain.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<section id="conclusion" class="themed theme-deepsea" data-bg="images/hero.jpg">
+  <div class="section-label">08 - Conclusion</div>
+  <h2 class="section-title fade-up">The costs are real. Visibility is the first lever.</h2>
+  <div class="body-text fade-up" style="margin-bottom: 2rem;">
+    <p>The environmental costs of AI are real, growing, and mostly hidden from view. Every query you run draws on infrastructure that consumes water, strains power grids, and dumps its burdens on communities that never got a vote on any of it. That invisibility is an intentional choice, kept in place because transparency would complicate a very profitable story about frictionless convenience.</p>
+    <p>Load shifting, better cooling, mandatory disclosure, smarter siting - all of it is doable with technology that already exists. What's missing isn't capability; it's pressure: from users who know what's actually going on, from regulators with real data to work from, and from a public that stops treating opacity as normal.</p>
+    <p>The core problem is simple: the people who benefit from AI aren't the same people paying its costs. Users and shareholders get the upside; local communities get strained aquifers, higher electricity bills, and diesel exhaust. That's not inevitable. It's just what happens when no one is required to account for it.</p>
   </div>
 </section>
 
@@ -532,6 +808,140 @@
     document.getElementById('calc-co2-eq').textContent = '≈ ' + (co2Year / 2.31).toFixed(1) + ' miles driven';
   }
   updateCalc();
+
+  // Carbon Emissions horizontal bar chart
+  new Chart(document.getElementById('carbonChart').getContext('2d'), {
+    type: 'bar',
+    data: {
+      labels: [
+        'Laying Concrete Pavement (1 mi, 30 yr service)',
+        'Training 1 LLM',
+        '100 Flights (JFK–PEK)',
+        'Average Car (Lifetime)',
+        'American Life (1 year)'
+      ],
+      datasets: [{
+        data: [390000, 300000, 230000, 57000, 14000],
+        backgroundColor: [
+          'rgba(17,29,44,0.85)',
+          '#80C7CC',
+          'rgba(17,29,44,0.85)',
+          'rgba(29,55,87,0.75)',
+          'rgba(29,55,87,0.55)'
+        ],
+        borderRadius: 2,
+        borderSkipped: false
+      }]
+    },
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: { display: false },
+        tooltip: { callbacks: { label: function(c) { return ' ' + c.parsed.x.toLocaleString() + ' kg CO₂'; } } }
+      },
+      scales: {
+        x: {
+          grid: { color: 'rgba(255,255,255,0.06)' },
+          ticks: { color: 'rgba(255,255,255,0.45)', font: { family: 'JetBrains Mono', size: 10 }, callback: function(v) { return v.toLocaleString(); } }
+        },
+        y: {
+          grid: { display: false },
+          ticks: { color: 'rgba(255,255,255,0.65)', font: { family: 'Inter', size: 12 } }
+        }
+      }
+    }
+  });
+
+  // Clean vs Dirty energy chart
+  var whiteChartBg = {
+    id: 'whiteChartBg',
+    beforeDraw: function(chart) {
+      var ctx = chart.ctx;
+      ctx.save();
+      ctx.globalCompositeOperation = 'destination-over';
+      ctx.fillStyle = 'rgba(255,255,255,0.96)';
+      ctx.fillRect(0, 0, chart.width, chart.height);
+      ctx.restore();
+    }
+  };
+
+  new Chart(document.getElementById('cleanDirtyChart').getContext('2d'), {
+    plugins: [whiteChartBg],
+    type: 'bar',
+    data: {
+      labels: ['United States', 'UK', 'Canada', 'China'],
+      datasets: [
+        {
+          label: 'Clean',
+          data: [25, 43, 67, 28],
+          backgroundColor: '#2E7D32',
+          borderRadius: 2
+        },
+        {
+          label: 'Dirty',
+          data: [75, 52, 17, 67],
+          backgroundColor: '#5A6678',
+          borderRadius: 2
+        }
+      ]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          display: true,
+          labels: {
+            color: 'rgba(17, 29, 44, 0.78)',
+            font: { family: 'JetBrains Mono', size: 11 },
+            boxWidth: 12,
+            boxHeight: 12
+          }
+        },
+        tooltip: {
+          backgroundColor: 'rgba(255,255,255,0.98)',
+          titleColor: '#111D2C',
+          bodyColor: '#111D2C',
+          borderColor: 'rgba(17,29,44,0.18)',
+          borderWidth: 1,
+          callbacks: { label: function(c) { return ' ' + c.dataset.label + ': ' + c.parsed.y + '%'; } }
+        }
+      },
+      scales: {
+        x: {
+          grid: { color: 'rgba(17,29,44,0.12)' },
+          ticks: { color: 'rgba(17,29,44,0.72)', font: { family: 'Inter', size: 12 } }
+        },
+        y: {
+          grid: { color: 'rgba(17,29,44,0.12)' },
+          ticks: { color: 'rgba(17,29,44,0.62)', font: { family: 'JetBrains Mono', size: 10 }, callback: function(v) { return v + '%'; } }
+        }
+      }
+    }
+  });
+</script>
+<script>
+  var knightCursor = document.getElementById('knight-cursor');
+  var knightFrame = 0;
+  var lastSwap = 0;
+  var swapInterval = 180;
+
+  document.addEventListener('mousemove', function(e) {
+    knightCursor.style.left = e.clientX + 'px';
+    knightCursor.style.top = e.clientY + 'px';
+  });
+
+  window.addEventListener('scroll', function() {
+    var now = Date.now();
+    if (now - lastSwap < swapInterval) return;
+    lastSwap = now;
+    knightFrame = knightFrame === 0 ? 1 : 0;
+    knightCursor.style.backgroundImage = knightFrame === 0
+      ? "url('images/knight.png')"
+      : "url('images/knight1.png')";
+  }, { passive: true });
 </script>
 </body>
 </html>
